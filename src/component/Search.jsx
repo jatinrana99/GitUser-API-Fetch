@@ -15,7 +15,7 @@ function Search(){
     }
 
     let fetchUser = ()=> {
-        return fetch(`https://api.github.com/user/${searchUser}`)
+        return fetch(`https://api.github.com/users/${searchUser}`)
                 .then((response) => response.json())
                 .then((data) => setUser(data));
     }
